@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+	body {
+		font-family: Arial, sans-serif;
+  		margin: 0;
+  		padding: 0;
+  		background: #f2f2f2;
+  		color: #333;
+	}
+
+	header {
+  		background-color: #4CAF50;
+  		color: white;
+  		padding: 1rem;
+  		text-align: center;
+	}
+
+	section {
+  		margin: 2rem;
+  		padding: 1rem;
+  		background-color: white;
+  		border-radius: 8px;
+  		box-shadow: 0 0 10px rgba(0,0,0,0.1);
+	}
+
+	h1, h2, h3 {
+  		color: #333;
+	}
+
+	a {
+  		color: #4CAF50;
+  		text-decoration: none;
+	}
+
+	a:hover {
+  		text-decoration: underline;
+	}
+	</style>
+</head>
+<body>
+
+  <header>
+    <h1>Gayatri Diwate</h1>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am a passionate and curious learner, currently exploring the world of web development and cybersecurity. I enjoy solving problems, learning new technologies, and building small projects. What makes me unique is my dedication to continuous growth and my love for both creative and analytical thinking.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML & CSS</li>
+      <li>Python Programming</li>
+      <li>Cybersecurity Basics</li>
+    </ul>
+
+    <h2>Interests</h2>
+    <ul>
+      <li>Ethical Hacking</li>
+      <li>Digital Forensics</li>
+      <li>UI/UX Design</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div>
+      <h3>Personal Portfolio Website</h3>
+      <p>A simple personal portfolio to showcase my skills and interests using HTML and CSS.</p>
+      <a href="#">View Project</a>
+    </div>
+    <div>
+      <h3>Password Generator in Python</h3>
+      <p>A basic tool that generates secure passwords using Python.</p>
+      <a href="#">View Project</a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Information</h2>
+    <p>Email: 4408969@gmail.com</p>
+    <p>
+      <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a> |
+      <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+    </p>
+  </section>
+
+</body>
+</html>
