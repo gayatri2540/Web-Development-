@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Internships</title>
+  <style>
+	body {
+  	font-family: Arial, sans-serif;
+  	background: linear-gradient(to right, #e0f7fa, #f1f8e9);
+  	margin: 0;
+  	padding: 20px;
+  	text-align: center;
+	}
+	h1 {
+  	color: #333;
+  	margin-bottom: 30px;
+	}
+	.container {
+  	display: grid;
+  	grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+  	gap: 30px;
+  	max-width: 900px;
+  	margin: 0 auto;
+	}
+	.card {
+  	background-color: #fff9e6;
+  	border-radius: 10px;
+  	padding: 20px;
+  	box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  	text-align: left;
+  	transition: transform 0.3s;
+	}
+	.card:hover {
+  	transform: scale(1.02);
+	}
+	.card h2 {
+  	font-size: 18px;
+  	color: #2c3e50;
+  	margin-bottom: 10px;
+	}
+	.card ul {
+  	padding-left: 20px;
+  	margin-bottom: 15px;
+	}
+	.btn {
+  	background-color: #00bcd4;
+  	color: white;
+  	padding: 10px 16px;
+  	text-decoration: none;
+  	border-radius: 6px;
+	}
+	.btn:hover {
+  	background-color: #0097a7;
+	}
+  </style>
+</head>
+<body>
+  <h1>Internships</h1>
+  <div class="container">
+    <div class="card">
+      <h2>Web Development Internship Program</h2>
+      <ul>
+        <li>Duration: 1 month/2 months</li>
+        <li>Location: Virtual</li>
+        <li>Stipend: -</li>
+        <li>Start date: 05/11/2023</li>
+      </ul>
+      <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.w3schools.com/&ved=2ahUKEwjqhYe4iLmNAxU59zgGHZ2BMI4QFnoECAoQAQ&usg=AOvVaw3Z63kcF6aawsbVZrfSzalJ" class="btn">View Details</a>
+    </div>
+    <div class="card">
+      <h2>App Development Internship Program</h2>
+      <ul>
+        <li>Duration: 1 month/2 months</li>
+        <li>Location: Virtual</li>
+        <li>Stipend: -</li>
+        <li>Start date: 05/11/2023</li>
+      </ul>
+      <a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwji1e_OjLmNAxXhvEsFHXTaH3YYABAAGgJzZg&co=1&gclid=Cj0KCQjwucDBBhDxARIsANqFdr26qICRWB5o8bclujlT0NeBVyEQt63-Lc4ZP_IBQ-kWzsZJxZP_Td8aAmRYEALw_wcB&ohost=www.google.com&cid=CAESVuD2OmT09xNbKLgNc4bnrOn1tPsvTnl5e1qpVrh2UD-sl3yZIweLrgGi_3MoJzuLMSyiFK-N7KABDp_wWbNSlxi4Aecd3ckIk78G3asQOiZ9OF9jFhds&sig=AOD64_2oKeYRVvbeKFmm1Ym1-Dp2N1fcyA&q&adurl&ved=2ahUKEwj-nOrOjLmNAxU5zTgGHZKcGSgQ0Qx6BAgJEAE" class="btn">View Details</a>
+    </div>
+    <div class="card">
+      <h2>Python Programming Internship Program</h2>
+      <ul>
+        <li>Duration: 1 month/2 months</li>
+        <li>Location: Virtual</li>
+        <li>Stipend: -</li>
+        <li>Start date: 05/11/2023</li>
+      </ul>
+      <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.w3schools.com/&ved=2ahUKEwjqhYe4iLmNAxU59zgGHZ2BMI4QFnoECAoQAQ&usg=AOvVaw3Z63kcF6aawsbVZrfSzalJ" class="btn">View Details</a>
+    </div>
+    <div class="card">
+      <h2>Java Programming Internship Program</h2>
+      <ul>
+        <li>Duration: 1 month/2 months</li>
+        <li>Location: Virtual</li>
+        <li>Stipend: -</li>
+        <li>Start date: 05/11/2023</li>
+      </ul>
+      <a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwji1e_OjLmNAxXhvEsFHXTaH3YYABAAGgJzZg&co=1&gclid=Cj0KCQjwucDBBhDxARIsANqFdr26qICRWB5o8bclujlT0NeBVyEQt63-Lc4ZP_IBQ-kWzsZJxZP_Td8aAmRYEALw_wcB&ohost=www.google.com&cid=CAESVuD2OmT09xNbKLgNc4bnrOn1tPsvTnl5e1qpVrh2UD-sl3yZIweLrgGi_3MoJzuLMSyiFK-N7KABDp_wWbNSlxi4Aecd3ckIk78G3asQOiZ9OF9jFhds&sig=AOD64_2oKeYRVvbeKFmm1Ym1-Dp2N1fcyA&q&adurl&ved=2ahUKEwj-nOrOjLmNAxU5zTgGHZKcGSgQ0Qx6BAgJEAE" class="btn">View Details</a>
+    </div>
+  </div>
+</body>
+</html>
