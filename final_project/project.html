@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Elegant Women's Wrist Watch">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Elegance in Time</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family:'Helvetica Neue', Helvetica, sans-serif;
+      color: #555;
+      background: #fff0f5;
+    }
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 2rem;
+      background: #fff0f5;
+      color: #f7c1cc;
+      box-shadow: 0 4px 14px rgb(0 0 0 / 0.1);
+    }
+    .logo {
+      color: #f7c1cc;
+      font-weight: bold;
+      font-size: 1.8rem;
+      transform: translateY(0);
+      transition: transform 0.5s ease;
+    }
+    .logo:hover {
+      transform: translateY(-5px);
+    }
+    .navbar ul {
+      display: flex;
+      gap: 1.5rem;
+      list-style: none;
+    }
+    .navbar ul li a {
+      color: #f7c1cc;
+      font-weight: bold;
+      padding-bottom: 5px;
+      position: relative;
+    }
+    .navbar ul li a::after {
+      content:'';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0%;
+      height: 3px;
+      background: #f7c1cc;
+      transition: width 0.4s ease-in-out;
+    }
+    .navbar ul li a:hover::after {
+      width: 100%;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1588692046440-bdf4b7eae7cc?ixlib=rb-4.0.3&auto=format&fit=crop&w=1280&q=80') no-repeat center center/cover;
+      height: 100vh;
+      color: #fff;
+      text-align: center;
+      padding: 5rem 2rem;
+      background-attachment: fixed;
+      transform: translateY(0);
+      animation: float 5s infinite ease-in-out;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-20px); }
+    }
+    .hero-content h2 {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+      text-shadow: 2px 2px 5px #f7c1cc;
+    }
+    .hero-content p {
+      font-size: 1.5rem;
+      color: #fff5f8;
+      margin-bottom: 2rem;
+    }
+    .cta-button {
+      padding: 0.8rem 2rem;
+      background: #f7c1cc;
+      color: #fff5f8;
+      border-radius: 30px;
+      font-weight: bold;
+      border: none;
+      transition: background 0.5s ease, transform 0.5s ease;
+      box-shadow: 0 4px 14px #f7c1cc;
+      cursor: pointer;
+    }
+    .cta-button:hover {
+      background: #ff9db5;
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px #ff9db5;
+    }
+    .product {
+      padding: 4rem 2rem;
+      background: #fff0f5;
+      color: #555;
+      text-align: center;
+    }
+    .product-wrapper {
+      margin: 0 auto;
+      max-width: 500px;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 20px;
+      box-shadow: 0 4px 14px #f7c1cc;
+      transform: translateY(0);
+      transition: transform 0.5s ease, box-shadow 0.5s ease;
+    }
+    .product-wrapper:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px #f7c1cc;
+    }
+    .product-wrapper img {
+      max-width: 100%;
+      border-radius: 20px;
+      margin-bottom: 1.5rem;
+    }
+    .product-info h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .product-info p {
+      font-size: 1.1rem;
+      color: #555;
+      margin-bottom: 1.5rem;
+    }
+    .product-info button {
+      padding: 0.7rem 1.5rem;
+      background: #f7c1cc;
+      color: #fff5f8;
+      font-weight: bold;
+      border-radius: 30px;
+      border: none;
+      box-shadow: 0 4px 14px #f7c1cc;
+      transition: transform 0.5s ease, box-shadow 0.5s ease;
+      cursor: pointer;
+    }
+    .product-info button:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px #ff9db5;
+      background: #ff9db5;
+    }
+    .features {
+      padding: 4rem 2rem;
+      background: #fff0f5;
+      color: #555;
+      text-align: center;
+    }
+    .features h2 {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+    }
+    .feature-cards {
+      display: flex;
+      gap: 1.5rem;
+      justify-content: center;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+    }
+    .card {
+      background: #fff;
+      padding: 1.5rem;
+      width: 250px;
+      border-radius: 20px;
+      box-shadow: 0 4px 14px rgb(0 0 0 / 0.1);
+      transform: translateY(0);
+      transition: transform 0.5s ease, box-shadow 0.5s ease;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px #f7c1cc;
+    }
+    .pricing {
+      background: #fff0f5;
+      color: #555;
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+    .price-card {
+      border: 2px solid #f7c1cc;
+      padding: 2rem;
+      border-radius: 20px;
+      background: #fff;
+      transform: translateY(0);
+      transition: transform 0.5s ease, box-shadow 0.5s ease;
+      box-shadow: 0 4px 14px #f7c1cc;
+      display: inline-block;
+    }
+    .price-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px #f7c1cc;
+    }
+    .buy-btn {
+      background: #f7c1cc;
+      color: #fff5f8;
+      padding: 0.5rem 1.5rem;
+      border-radius: 20px;
+      font-weight: bold;
+      border: none;
+      box-shadow: 0 4px 14px #f7c1cc;
+      transition: transform 0.5s ease, box-shadow 0.5s ease;
+      margin-top: 1rem;
+      cursor: pointer;
+    }
+    .buy-btn:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px #ff9db5;
+      background: #ff9db5;
+    }
+    .contact {
+      padding: 3rem 2rem;
+      background: #f7c1cc;
+      color: #fff5f8;
+      text-align: center;
+    }
+    .contact input {
+      padding: 0.7rem;
+      width: 250px;
+      border: none;
+      border-radius: 5px;
+      margin-bottom: 1rem;
+    }
+    .contact button {
+      padding: 0.7rem 1.5rem;
+      border: none;
+      background: #fff5f8;
+      color: #f7c1cc;
+      font-weight: bold;
+      border-radius: 5px;
+      margin-left: 0.5rem;
+      box-shadow: 0 4px 14px #fff5f8;
+      transition: transform 0.5s ease, box-shadow 0.5s ease;
+      cursor: pointer;
+    }
+    .contact button:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px #fff5f8;
+    }
+    footer {
+      background: #fff0f5;
+      color: #555;
+      text-align: center;
+      padding: 1rem;
+      box-shadow: 0 -4px 14px #f7c1cc;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="hero">
+    <nav class="navbar">
+      <h1 class="logo">Elegance</h1>
+      <ul>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#product">Product</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero-content">
+      <h2>Elegance in Time</h2>
+      <p>A perfect blend of style and precision, just for her.</p><br><br><br><br><br><br><br>
+      <a href="#pricing"><button class="cta-button">Buy Now</button></a>
+    </div>
+  </header>
+
+  <section id="product" class="product">
+    <h2>Petite Melrose</h2>
+    <div class="product-wrapper">
+      <img src="watch.png" alt="Petite Melrose Eggshell White Rose Gold Watch">
+      <div class="product-info">
+        <h3>Petite Melrose Eggshell White Rose Gold</h3>
+        <p>This elegant wristwatch offers a sophisticated blend of rose gold and classic design. Durable, stylish, water-resistant, and perfect for any occasion.</p>
+        <a href="https://in.danielwellington.com/products/petite-melrose-eggshell-white-rose-gold?variant=45371487846709" target="_blank"><button>View Product</button></a>
+      </div>
+    </div>
+  </section>
+
+  <section id="features" class="features">
+    <h2>Features</h2>
+    <div class="feature-cards">
+      <div class="card">
+        <h3>Premium Design</h3>
+        <p>Crafted with rose gold accents and genuine leather straps.</p>
+      </div>
+      <div class="card">
+        <h3>Water Resistant</h3>
+        <p>Go wherever life takes you without worry.</p>
+      </div>
+      <div class="card">
+        <h3>Long Battery</h3>
+        <p>One charge lasts up to 12 months.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing" class="pricing">
+    <h2>Pricing</h2>
+    <div class="price-card">
+      <h3>Only ₹2,999</h3>
+      <p>Free delivery across India</p><br>
+      <a href="#" class="buy-btn">Order Now</a>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Stay Updated</h2>
+    <form id="contact-form">
+      <input id="email" type="email" placeholder="Enter your email" required>
+      <button>Subscribe</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Elegance in Time. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('contact-form').addEventListener('submit',(e)=>{
+      e.preventDefault();
+      alert('Thank you for subscribing!');
+    });
+  </script>
+
+</body>
+</html>
